@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Serenity Puzzle</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="backdrop"></div>
+  <div class="page">
+    <header class="hero">
+      <div class="eyebrow">Serenity Puzzle</div>
+      <h1>微光质感的益智游戏</h1>
+      <p>灵感源自苹果官网的克制与优雅。用滑块排出完整的序列，享受每一次流畅的移动。</p>
+      <div class="hero-actions">
+        <button id="newGame" class="pill primary">开始新的局</button>
+        <button id="reshuffle" class="pill ghost">轻轻重排</button>
+      </div>
+    </header>
+
+    <main class="shell glass">
+      <section class="hud" aria-label="游戏统计">
+        <div class="metric">
+          <span>步数</span>
+          <strong id="moveCount">0</strong>
+        </div>
+        <div class="metric">
+          <span>用时</span>
+          <strong id="timer">00:00</strong>
+        </div>
+        <div class="metric">
+          <span>最佳时间</span>
+          <strong id="bestTime">--</strong>
+        </div>
+        <div class="status" id="status">准备开局</div>
+      </section>
+
+      <section class="board-wrapper" aria-label="滑块棋盘">
+        <div id="board" class="board" role="grid" aria-label="4x4 滑块拼图"></div>
+      </section>
+
+      <section class="tips" aria-label="玩法提示">
+        <h2>玩法提示</h2>
+        <ul>
+          <li>点击或轻触任意与空白相邻的方块，将其滑入空位。</li>
+          <li>排列数字 1 到 15，空白在右下角，即可完成游戏。</li>
+          <li>每一局都经过校验，保证可解。放松心情，尽情享受。</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footnote">
+      <p>设计以柔和玻璃质感为灵感，聚焦于轻盈、流畅的交互体验。</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

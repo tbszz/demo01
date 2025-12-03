@@ -1,0 +1,11 @@
+{
+  "name": "serenity-puzzle",
+  "version": "1.0.0",
+  "description": "Apple-inspired sliding puzzle with simple static server",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "MIT"
+}
